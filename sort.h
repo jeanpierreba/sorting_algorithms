@@ -20,6 +20,12 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+/* Prints an array of integers */
+void print_array(const int *array, size_t size);
+
+/* Prints a list of integers */
+void print_list(const listint_t *list);
+
 /* sorts an array of integers in ascending order using the Bubble sort algorithm */
 void bubble_sort(int *array, size_t size);
 
