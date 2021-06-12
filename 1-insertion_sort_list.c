@@ -1,10 +1,9 @@
 #include "sort.h"
 
-void swap(listint_t *to_right, listint_t **list);
-
 /**
  * swap - change the place of two nodes
  * @to_right: node to move to the previous position in the list
+ * @list: list to be sorted
  */
 
 void swap(listint_t *to_right, listint_t **list)
