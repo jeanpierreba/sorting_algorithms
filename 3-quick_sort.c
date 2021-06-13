@@ -1,17 +1,14 @@
 #include "sort.h"
 
-void swap(int *array, int low, int high, size_t size);
-void quick_sort2(int *array, int low, int high, size_t size);
-
 /**
- * swap - A utility function to swap two elements
+ * swap_a - A utility function to swap two elements
  * @array: array containing the positions to swap
  * @low: index of the lower element to swap
  * @high: index of the high element to swap
  * @size: size of the array
  */
 
-void swap(int *array, int low, int high, size_t size)
+void swap_a(int *array, int low, int high, size_t size)
 {
 	int tmp;
 
@@ -47,11 +44,11 @@ void quick_sort2(int *array, int low, int high, size_t size)
 		{
 			if (array[j] < pivot)
 			{
-				swap(array, i, j, size);
+				swap_a(array, i, j, size);
 				i++;
 			}
 		}
-		swap(array, i, high, size);
+		swap_a(array, i, high, size);
 
 		pi = i;
 		quick_sort2(array, low, pi - 1, size);
