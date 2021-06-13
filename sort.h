@@ -46,4 +46,9 @@ int sort_needed(int *array, size_t size);
 
 void swap(listint_t *to_right, listint_t **list);
 
+void swap_a(int *array, int low, int high, size_t size);
+
+void quick_sort2(int *array, int low, int high, size_t size);
+
+
 #endif /* SORT_H */
