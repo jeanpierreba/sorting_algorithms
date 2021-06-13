@@ -1,8 +1,5 @@
 #include "sort.h"
 
-void swap(int *array, int low, int high, size_t size);
-void quick_sort2(int *array, int low, int high, size_t size);
-
 /**
  * swap - A utility function to swap two elements
  * @array: array containing the positions to swap
